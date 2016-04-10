@@ -46,7 +46,7 @@ void AProceduralTerrain::BeginPlay()
 			}
 			else if (j < 64 || noise > 0.25 * (j / 4))
 			{
-				back->SetCell(i, j, stone);
+				back->SetCell(i, j, grass);
 			}
 			else
 			{
