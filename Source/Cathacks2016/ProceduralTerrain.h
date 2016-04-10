@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "PaperTileLayer.h"
 #include "PaperTileMap.h"
+#include "PaperTileMapComponent.h"
 #include "PaperTileSet.h"
 #include "ProceduralTerrain.generated.h"
 
@@ -29,8 +30,8 @@ public:
 
 private:
 	UPaperTileMap* map;
+	UPaperTileMap* sheet;
 	UPaperTileMapComponent* tiles;
-	//UPaperTileSet* tiles;
 	UPaperTileLayer* front;
 	UPaperTileLayer* back;
 	int width;
