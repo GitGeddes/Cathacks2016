@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include <vector>
+
 #include "GameFramework/Actor.h"
 #include "PaperTileLayer.h"
 #include "PaperTileMap.h"
@@ -27,6 +29,8 @@ public:
 	virtual void Tick( float DeltaSeconds ) override;
 
 	FSimpleMulticastDelegate OnExit();
+
+	double GenerateNoise(int width, int height);
 
 private:
 	UPaperTileMap* map;
