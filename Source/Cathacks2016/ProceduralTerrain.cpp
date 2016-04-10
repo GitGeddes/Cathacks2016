@@ -29,10 +29,10 @@ void AProceduralTerrain::BeginPlay()
 	FPaperTileInfo tile = tiles->GetTile(2, 5, 0);
 
 	back = NewObject<UPaperTileLayer>();
-	back->ResizeMap(100, 100);
+	back->ResizeMap(128, 128);
 
-	for (int i = 0; i < 100; i++) {
-		for (int j = 0; j < 100; j++) {
+	for (int i = 0; i < 128; i++) {
+		for (int j = 0; j < 128; j++) {
 			back->SetCell(i, j, tile);
 		}
 	}
